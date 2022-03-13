@@ -32,7 +32,7 @@ class PrologHomeController extends Controller
         if (request('consult') == true) {
             $query = request('query');
             $file = file_get_contents('R1.pl');
-            $path = 'C:\Prolog\swipl\bin\swipl.exe';
+            $path = env('PROLOG_LOCAL_PATH');
             //exec ejeuta el comando swipl que es la conexiòn con prolog y le pasa el archivo R1.pl
             $lastLine = exec($path." -f R1.pl -g listing(".$query.") R1.pl 2>&1", $output, $returnValue);
             $action = request('action');
@@ -45,7 +45,7 @@ class PrologHomeController extends Controller
         if (request('consult2') == true) {
             $query2 = request('query2');
             $file = file_get_contents('R1.pl');
-            $path = 'C:\Prolog\swipl\bin\swipl.exe';
+            $path = env('PROLOG_LOCAL_PATH');
             $lastLine = exec($path." -f R1.pl -g ".$query2." R1.pl 2>&1", $output, $returnValue2);
             $action = request('action');
             $consult2 = true;
@@ -56,7 +56,7 @@ class PrologHomeController extends Controller
             $queryList = request('queryList');
             $format = "listing(".$queryList.")";
             $file = file_get_contents('R1.pl');
-            $path = 'C:\Prolog\swipl\bin\swipl.exe';
+            $path = env('PROLOG_LOCAL_PATH');
             //exec ejeuta el comando swipl que es la conexiòn con prolog y le pasa el archivo R1.pl
             $lastLine = exec($path." -f R1.pl -g ".$format." R1.pl 2>&1", $outputList, $returnValueList);
             $action = request('action');
