@@ -32,11 +32,15 @@ class PrologHomeController extends Controller
         if (request('consult') == true) {
             $query = request('query');
             $file = file_get_contents('R1.pl');
-            $path = env('PROLOG_LOCAL_PATH');
+            $path = env('PROLOG_LOCAL_PATH'); //ruta de ejecución prolog
             //exec ejeuta el comando swipl que es la conexiòn con prolog y le pasa el archivo R1.pl
             $lastLine = exec($path." -f R1.pl -g listing(".$query.") R1.pl 2>&1", $output, $returnValue);
+            //comando que ejecuta la consulta query a prolog. 
+            //$output es el array que contiene el resultado de la consulta y $returnValue es el valor de retorno de la consulta
+            //los valores de retorno son 0 si la consulta es correcta y 1 si no es correcta y 2 si hay un error de sintaxis
+
             $action = request('action');
-            $consult = true;
+            $consult = true; // le indica a la vista que es una consulta simple
         }
 
         // si es una consulta de aprobacion se recoje el archivo y la consulta query,
@@ -48,9 +52,13 @@ class PrologHomeController extends Controller
             $path = env('PROLOG_LOCAL_PATH');
             $lastLine = exec($path." -f R1.pl -g ".$query2." R1.pl 2>&1", $output, $returnValue2);
             $action = request('action');
-            $consult2 = true;
+            $consult2 = true; // le indica a la vista que es una consulta de aprobacion
         }
-        //se retorna la vista prolog con las variables que se le pasaron
+        
+        // si es una consulta de listar se recoje el archivo y la consulta queryList,
+        // se abre un string con el archivo prolog R1.pl y se lee linea por linea
+        // va buscando el predicado pasado por parametro y si lo encuentra lo guarda en list y se cierra el archivo
+        // se envía a la vista con la variable list para mostrar los resultados
 
         if (request('consultList') == true) {
             $queryList = request('queryList');
@@ -60,8 +68,10 @@ class PrologHomeController extends Controller
             //exec ejeuta el comando swipl que es la conexiòn con prolog y le pasa el archivo R1.pl
             $lastLine = exec($path." -f R1.pl -g ".$format." R1.pl 2>&1", $outputList, $returnValueList);
             $action = request('action');
-            $consultList = true;
+            $consultList = true; // le indica a la vista que es una consulta de listar
         }
+
+        //se retorna la vista prolog con las variables que se le pasaron
 
         return view('prolog-view.index')
             ->with('file', $file)
@@ -89,6 +99,8 @@ class PrologHomeController extends Controller
     {
         //la consulta sencilla query se guarda en la variable query y se retorna a la vista prolog
         $consult = request('action')."('".request('item1')."','".request('item2')."')";
+
+        //action es cualquier predicado predefinido (bodega, lote,etc), item1 y item2 son los elementos que se pasan por parametro
         
         return redirect()->route('prolog.index',[
             'consult' => true,
