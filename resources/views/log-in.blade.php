@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
     <script src="https://kit.fontawesome.com/6806b2fbc3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Recursos/CSS/StyleRegistro.css">
 </head>
+
 <body>
-    <form class="Formulario">
+    <form class="Formulario" action="{{ route('login.store') }}" method="post">
+        @csrf
         <h1>Iniciar Sesion</h1>
         <div class="Contenedor">
             <div class="input_Contenedor">
@@ -26,4 +29,5 @@
         </div>
     </form>
 </body>
+
 </html>

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LogInController;
+use App\Http\Controllers\PrologHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     Route::get('/', function () {
-        return redirect()->route('subdomain-login');
+        return redirect()->route('login.index');
     });
+}); */
+Route::get('/', [LogInController::class, 'index'])->name('login.index');
+Route::post('/login/create', [LogInController::class, 'store'])->name('login.store');
 
-        Route::get('login', [WebServiceDocsController::class, 'index'])->name('docs.index');
-        Route::get('login', 'Auth\LoginController@index')->name('subdomain-login');
-});
+Route::get('/prolog', [PrologHomeController::class, 'index'])->name('prolog.index');
+Route::post('/prolog/consult', [PrologHomeController::class, 'store'])->name('prolog.store');

@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: white;
+    font-family: 'calibri';
+    background: url(Fondo/Fondo\ Projecto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+input[type="text"]{
+   font-size: 15px;
+   width: 15%;
+   padding: 5px;
+   border: none;
+   float: right;
+   float: left;
+   height: 30px;
+   
+}
+select{
+    font-size: 15px;
+    width: 15%;
+    border: none;
+    padding: 5px ;
+    float: right;
+    margin-left: 45px;
+    height: 30px;
+    float: left;
+}
+
+.button{
+    border: none;
+    width: 10%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    float: left;
+    margin-left: 45px;
+}
+.button:hover{
+    background: cadetblue;
+}
+.input-Contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+header {
+    background: lightblue;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+}
+.menu {
+    width: 1364px;
+    margin: 0 auto;
+}    
+nav {
+    float: right;
+}
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 24px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: rgb(0, 0, 0);
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+nav ul li a:hover::before {
+width: 100%;
+}
+.Consulta{
+    background: none;
+    margin-top: 10px;
+    padding: 3px;
+}
