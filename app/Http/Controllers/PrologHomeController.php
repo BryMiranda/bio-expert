@@ -103,6 +103,9 @@ class PrologHomeController extends Controller
     {
         //la consulta aprovacion se guarda en la variable query2 y se retorna a la vista prolog
         //esta variable analizarà cada uno de los casos de aprobacion
+        //Terminos de aprovaciòn
+        //aprobacion(A,B) :- 
+    	//productoA(A), productoB(B), transito(A, B), pedido(A, B), bodega(A, B), lote(A, B).
         $consult2 = "aprobacion('".request('item1')."','".request('item2')."')";
         
         return redirect()->route('prolog.index',[

@@ -32,6 +32,7 @@
                 ('Ibuprofeno','x').</strong><br>
 
         </div>
+        {{-- Secciòn de Selects --}}
         <form class="Consulta" action="{{ route('prolog.store', ['consult' => true , 'actionPass' => $action]) }}" method="post">
             @csrf
             <div class="Contenedor">
@@ -68,6 +69,7 @@
         </form>
     </div class="Consulta">
     @if ($file != null)
+    {{-- Primera consulta simple --}}
         @if ($consult)
         <div class="Consulta">
             <h2 style="color:white;">Resultado de consultar ?- {{ $query }}</h2>
@@ -89,6 +91,7 @@
             </div>
         </div>
         @endif
+        {{-- Verificar aprovaciòn --}}
         <div class="Consulta">
             @if ($actionPass && !$consult2)
                 <form class="Consulta"
@@ -122,6 +125,7 @@
             </div>
         </div>
         @endif
+        {{-- Listado de productos --}}
         @if (!$consultList)
         <div class="Consulta">
             <form class="Consulta"
