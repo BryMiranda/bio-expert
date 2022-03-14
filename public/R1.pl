@@ -1,18 +1,18 @@
-%Si algún producto  está completo y se encuentra en transito con el
+%Si algun producto  estA completo y se encuentra en transito con el
 % pedido recibido y se verifica en la bodega la existencia de los lotes
 %  si estan completos, entonces reserva es aprobada
 
 productoA('Paracetamol').
 productoA('Ibuprofeno').
 productoA('Lactulosa').
-productoA('Bupivacaína').
-productoA('Lidocaína').
+productoA('Bupivacaina').
+productoA('Lidocaina').
 productoA('Alopurinol').
 
 productoB('Analgan').
 productoB('Aspirina').
 productoB('Naloxona').
-productoB('Ácido Valproico').
+productoB('Acido Valproico').
 productoB('fenobarbital').
 productoB('Amoxicilina').
 
@@ -21,8 +21,8 @@ transito('Paracetamol','Lactulosa').
 transito('Paracetamol','Aspirina').
 
 transito('Paracetamol','Naloxona').
-transito('Paracetamol','Lidocaína').
-transito('Paracetamol','Ácido Valproico').
+transito('Paracetamol','Lidocaina').
+transito('Paracetamol','Acido Valproico').
 
 transito('Paracetamol','fenobarbital').
 transito('Paracetamol','Amoxicilina').
@@ -30,10 +30,10 @@ transito('Ibuprofeno','Analgan').
 transito('Ibuprofeno','Paracetamol').
 transito('Ibuprofeno','Lactulosa').
 
-transito('Ibuprofeno','Bupivacaína').
+transito('Ibuprofeno','Bupivacaina').
 transito('Ibuprofeno','Naloxona').
 
-transito('Ibuprofeno','Ácido Valproico').
+transito('Ibuprofeno','Acido Valproico').
 transito('Ibuprofeno','Alopurinol').
 
 transito('Ibuprofeno','Amoxicilina').
@@ -41,42 +41,42 @@ transito('Lactulosa','Analgan').
 transito('Lactulosa','Paracetamol').
 transito('Lactulosa','Ibuprofeno').
 
-transito('Lactulosa','Bupivacaína').
+transito('Lactulosa','Bupivacaina').
 transito('Lactulosa','Naloxona').
 
-transito('Lactulosa','Ácido Valproico').
+transito('Lactulosa','Acido Valproico').
 
 transito('Lactulosa','fenobarbital').
 transito('Lactulosa','Amoxicilina').
-transito('Bupivacaína','Analgan').
+transito('Bupivacaina','Analgan').
 
-transito('Bupivacaína','Lactulosa').
-transito('Bupivacaína','Aspirina').
+transito('Bupivacaina','Lactulosa').
+transito('Bupivacaina','Aspirina').
 
-transito('Bupivacaína','Naloxona').
-transito('Bupivacaína','Lidocaína').
-transito('Bupivacaína','Ácido Valproico').
+transito('Bupivacaina','Naloxona').
+transito('Bupivacaina','Lidocaina').
+transito('Bupivacaina','Acido Valproico').
 
-transito('Bupivacaína','fenobarbital').
-transito('Bupivacaína','Amoxicilina').
-transito('Lidocaína','Analgan').
-transito('Lidocaína','Paracetamol').
-transito('Lidocaína','Lactulosa').
+transito('Bupivacaina','fenobarbital').
+transito('Bupivacaina','Amoxicilina').
+transito('Lidocaina','Analgan').
+transito('Lidocaina','Paracetamol').
+transito('Lidocaina','Lactulosa').
 
-transito('Lidocaína','Bupivacaína').
-transito('Lidocaína','Naloxona').
-transito('Lidocaína','Ibuprofeno').
+transito('Lidocaina','Bupivacaina').
+transito('Lidocaina','Naloxona').
+transito('Lidocaina','Ibuprofeno').
 
-transito('Lidocaína','Alopurinol').
-transito('Lidocaína','fenobarbital').
+transito('Lidocaina','Alopurinol').
+transito('Lidocaina','fenobarbital').
 
 transito('Alopurinol','Analgan').
 transito('Alopurinol','Paracetamol').
 
 transito('Alopurinol','Aspirina').
-transito('Alopurinol','Bupivacaína').
+transito('Alopurinol','Bupivacaina').
 
-transito('Alopurinol','Lidocaína').
+transito('Alopurinol','Lidocaina').
 
 transito('Alopurinol','Ibuprofeno').
 transito('Alopurinol','fenobarbital').
@@ -85,9 +85,9 @@ transito('Analgan','Ibuprofeno').
 transito('Analgan','Paracetamol').
 
 transito('Analgan','Aspirina').
-transito('Analgan','Bupivacaína').
+transito('Analgan','Bupivacaina').
 transito('Analgan','Naloxona').
-transito('Analgan','Lidocaína').
+transito('Analgan','Lidocaina').
 
 transito('Analgan','Alopurinol').
 transito('Analgan','fenobarbital').
@@ -96,9 +96,9 @@ transito('Aspirina','Analgan').
 transito('Aspirina','Paracetamol').
 transito('Aspirina','Lactulosa').
 
-transito('Aspirina','Bupivacaína').
+transito('Aspirina','Bupivacaina').
 transito('Aspirina','Naloxona').
-transito('Aspirina','Lidocaína').
+transito('Aspirina','Lidocaina').
 
 transito('Aspirina','Alopurinol').
 transito('Aspirina','fenobarbital').
@@ -109,30 +109,30 @@ transito('Naloxona','Lactulosa').
 transito('Naloxona','Aspirina').
 
 transito('Naloxona','Ibuprofeno').
-transito('Naloxona','Lidocaína').
-transito('Naloxona','Ácido Valproico').
+transito('Naloxona','Lidocaina').
+transito('Naloxona','Acido Valproico').
 
 transito('Naloxona','fenobarbital').
 transito('Naloxona','Amoxicilina').
-transito('Ácido Valproico','Analgan').
+transito('Acido Valproico','Analgan').
 
-transito('Ácido Valproico','Lactulosa').
-transito('Ácido Valproico','Aspirina').
-transito('Ácido Valproico','Bupivacaína').
+transito('Acido Valproico','Lactulosa').
+transito('Acido Valproico','Aspirina').
+transito('Acido Valproico','Bupivacaina').
 
-transito('Ácido Valproico','Lidocaína').
-transito('Ácido Valproico','Ibuprofeno').
+transito('Acido Valproico','Lidocaina').
+transito('Acido Valproico','Ibuprofeno').
 
-transito('Ácido Valproico','fenobarbital').
-transito('Ácido Valproico','Amoxicilina').
+transito('Acido Valproico','fenobarbital').
+transito('Acido Valproico','Amoxicilina').
 transito('fenobarbital','Analgan').
 transito('fenobarbital','Paracetamol').
 
 transito('fenobarbital','Aspirina').
-transito('fenobarbital','Bupivacaína').
+transito('fenobarbital','Bupivacaina').
 transito('fenobarbital','Naloxona').
 
-transito('fenobarbital','Ácido Valproico').
+transito('fenobarbital','Acido Valproico').
 transito('fenobarbital','Alopurinol').
 
 transito('fenobarbital','Amoxicilina').
@@ -140,10 +140,10 @@ transito('Amoxicilina','Analgan').
 
 transito('Amoxicilina','Lactulosa').
 transito('Amoxicilina','Aspirina').
-transito('Amoxicilina','Bupivacaína').
+transito('Amoxicilina','Bupivacaina').
 
-transito('Amoxicilina','Lidocaína').
-transito('Amoxicilina','Ácido Valproico').
+transito('Amoxicilina','Lidocaina').
+transito('Amoxicilina','Acido Valproico').
 
 transito('Amoxicilina','fenobarbital').
 transito('Amoxicilina','Ibuprofeno').
@@ -152,9 +152,9 @@ pedido('Paracetamol','Ibuprofeno').
 pedido('Paracetamol','Analgan').
 pedido('Paracetamol','Lactulosa').
 
-pedido('Paracetamol','Bupivacaína').
+pedido('Paracetamol','Bupivacaina').
 pedido('Paracetamol','Naloxona').
-pedido('Paracetamol','Lidocaína').
+pedido('Paracetamol','Lidocaina').
 
 pedido('Paracetamol','Alopurinol').
 
@@ -163,10 +163,10 @@ pedido('Ibuprofeno','Analgan').
 pedido('Ibuprofeno','Paracetamol').
 
 pedido('Ibuprofeno','Aspirina').
-pedido('Ibuprofeno','Bupivacaína').
+pedido('Ibuprofeno','Bupivacaina').
 
-pedido('Ibuprofeno','Lidocaína').
-pedido('Ibuprofeno','Ácido Valproico').
+pedido('Ibuprofeno','Lidocaina').
+pedido('Ibuprofeno','Acido Valproico').
 pedido('Ibuprofeno','Alopurinol').
 
 pedido('Ibuprofeno','Amoxicilina').
@@ -174,42 +174,42 @@ pedido('Lactulosa','Analgan').
 
 pedido('Lactulosa','Ibuprofeno').
 pedido('Lactulosa','Aspirina').
-pedido('Lactulosa','Bupivacaína').
+pedido('Lactulosa','Bupivacaina').
 
-pedido('Lactulosa','Lidocaína').
-pedido('Lactulosa','Ácido Valproico').
+pedido('Lactulosa','Lidocaina').
+pedido('Lactulosa','Acido Valproico').
 pedido('Lactulosa','Alopurinol').
 
 pedido('Lactulosa','Amoxicilina').
-pedido('Bupivacaína','Analgan').
+pedido('Bupivacaina','Analgan').
 
-pedido('Bupivacaína','Lactulosa').
+pedido('Bupivacaina','Lactulosa').
 
-pedido('Bupivacaína','Ibuprofeno').
-pedido('Bupivacaína','Naloxona').
-pedido('Bupivacaína','Lidocaína').
-pedido('Bupivacaína','Ácido Valproico').
+pedido('Bupivacaina','Ibuprofeno').
+pedido('Bupivacaina','Naloxona').
+pedido('Bupivacaina','Lidocaina').
+pedido('Bupivacaina','Acido Valproico').
 
-pedido('Bupivacaína','fenobarbital').
-pedido('Bupivacaína','Amoxicilina').
-pedido('Lidocaína','Analgan').
-pedido('Lidocaína','Paracetamol').
+pedido('Bupivacaina','fenobarbital').
+pedido('Bupivacaina','Amoxicilina').
+pedido('Lidocaina','Analgan').
+pedido('Lidocaina','Paracetamol').
 
-pedido('Lidocaína','Aspirina').
-pedido('Lidocaína','Bupivacaína').
+pedido('Lidocaina','Aspirina').
+pedido('Lidocaina','Bupivacaina').
 
-pedido('Lidocaína','Ibuprofeno').
-pedido('Lidocaína','Ácido Valproico').
-pedido('Lidocaína','Alopurinol').
+pedido('Lidocaina','Ibuprofeno').
+pedido('Lidocaina','Acido Valproico').
+pedido('Lidocaina','Alopurinol').
 
-pedido('Lidocaína','Amoxicilina').
+pedido('Lidocaina','Amoxicilina').
 pedido('Alopurinol','Analgan').
 
 pedido('Alopurinol','Lactulosa').
 pedido('Alopurinol','Aspirina').
 
 pedido('Alopurinol','Naloxona').
-pedido('Alopurinol','Lidocaína').
+pedido('Alopurinol','Lidocaina').
 
 pedido('Alopurinol','Ibuprofeno').
 pedido('Alopurinol','fenobarbital').
@@ -218,10 +218,10 @@ pedido('Analgan','Ibuprofeno').
 
 pedido('Analgan','Lactulosa').
 pedido('Analgan','Aspirina').
-pedido('Analgan','Bupivacaína').
+pedido('Analgan','Bupivacaina').
 
-pedido('Analgan','Lidocaína').
-pedido('Analgan','Ácido Valproico').
+pedido('Analgan','Lidocaina').
+pedido('Analgan','Acido Valproico').
 pedido('Analgan','Alopurinol').
 pedido('Analgan','fenobarbital').
 pedido('Analgan','Amoxicilina').
@@ -229,10 +229,10 @@ pedido('Analgan','Amoxicilina').
 pedido('Aspirina','Paracetamol').
 pedido('Aspirina','Lactulosa').
 pedido('Aspirina','Ibuprofeno').
-pedido('Aspirina','Bupivacaína').
+pedido('Aspirina','Bupivacaina').
 
-pedido('Aspirina','Lidocaína').
-pedido('Aspirina','Ácido Valproico').
+pedido('Aspirina','Lidocaina').
+pedido('Aspirina','Acido Valproico').
 pedido('Aspirina','Alopurinol').
 
 pedido('Aspirina','Amoxicilina').
@@ -240,32 +240,32 @@ pedido('Naloxona','Analgan').
 pedido('Naloxona','Paracetamol').
 pedido('Naloxona','Lactulosa').
 
-pedido('Naloxona','Bupivacaína').
+pedido('Naloxona','Bupivacaina').
 pedido('Naloxona','Ibuprofeno').
 
-pedido('Naloxona','Ácido Valproico').
+pedido('Naloxona','Acido Valproico').
 pedido('Naloxona','Alopurinol').
 pedido('Naloxona','fenobarbital').
 pedido('Naloxona','Amoxicilina').
-pedido('Ácido Valproico','Analgan').
+pedido('Acido Valproico','Analgan').
 
-pedido('Ácido Valproico','Lactulosa').
-pedido('Ácido Valproico','Aspirina').
-pedido('Ácido Valproico','Bupivacaína').
-pedido('Ácido Valproico','Naloxona').
-pedido('Ácido Valproico','Lidocaína').
+pedido('Acido Valproico','Lactulosa').
+pedido('Acido Valproico','Aspirina').
+pedido('Acido Valproico','Bupivacaina').
+pedido('Acido Valproico','Naloxona').
+pedido('Acido Valproico','Lidocaina').
 
-pedido('Ácido Valproico','Alopurinol').
-pedido('Ácido Valproico','fenobarbital').
-pedido('Ácido Valproico','Amoxicilina').
+pedido('Acido Valproico','Alopurinol').
+pedido('Acido Valproico','fenobarbital').
+pedido('Acido Valproico','Amoxicilina').
 pedido('fenobarbital','Analgan').
 pedido('fenobarbital','Paracetamol').
 pedido('fenobarbital','Lactulosa').
 
-pedido('fenobarbital','Bupivacaína').
+pedido('fenobarbital','Bupivacaina').
 pedido('fenobarbital','Naloxona').
-pedido('fenobarbital','Lidocaína').
-pedido('fenobarbital','Ácido Valproico').
+pedido('fenobarbital','Lidocaina').
+pedido('fenobarbital','Acido Valproico').
 
 pedido('fenobarbital','Ibuprofeno').
 pedido('fenobarbital','Amoxicilina').
@@ -273,9 +273,9 @@ pedido('Amoxicilina','Analgan').
 pedido('Amoxicilina','Paracetamol').
 pedido('Amoxicilina','Lactulosa').
 
-pedido('Amoxicilina','Bupivacaína').
+pedido('Amoxicilina','Bupivacaina').
 pedido('Amoxicilina','Naloxona').
-pedido('Amoxicilina','Lidocaína').
+pedido('Amoxicilina','Lidocaina').
 
 pedido('Amoxicilina','Alopurinol').
 pedido('Amoxicilina','fenobarbital').
@@ -286,10 +286,10 @@ bodega('Paracetamol','Ibuprofeno').
 bodega('Paracetamol','Analgan').
 bodega('Paracetamol','Lactulosa').
 bodega('Paracetamol','Aspirina').
-bodega('Paracetamol','Bupivacaína').
+bodega('Paracetamol','Bupivacaina').
 
-bodega('Paracetamol','Lidocaína').
-bodega('Paracetamol','Ácido Valproico').
+bodega('Paracetamol','Lidocaina').
+bodega('Paracetamol','Acido Valproico').
 bodega('Paracetamol','Alopurinol').
 bodega('Paracetamol','fenobarbital').
 bodega('Paracetamol','Amoxicilina').
@@ -297,10 +297,10 @@ bodega('Ibuprofeno','Analgan').
 
 bodega('Ibuprofeno','Lactulosa').
 bodega('Ibuprofeno','Aspirina').
-bodega('Ibuprofeno','Bupivacaína').
+bodega('Ibuprofeno','Bupivacaina').
 bodega('Ibuprofeno','Naloxona').
 
-bodega('Ibuprofeno','Ácido Valproico').
+bodega('Ibuprofeno','Acido Valproico').
 bodega('Ibuprofeno','Alopurinol').
 bodega('Ibuprofeno','fenobarbital').
 bodega('Ibuprofeno','Amoxicilina').
@@ -308,43 +308,43 @@ bodega('Lactulosa','Analgan').
 bodega('Lactulosa','Paracetamol').
 
 bodega('Lactulosa','Aspirina').
-bodega('Lactulosa','Bupivacaína').
+bodega('Lactulosa','Bupivacaina').
 
-bodega('Lactulosa','Lidocaína').
-bodega('Lactulosa','Ácido Valproico').
+bodega('Lactulosa','Lidocaina').
+bodega('Lactulosa','Acido Valproico').
 bodega('Lactulosa','Alopurinol').
 bodega('Lactulosa','fenobarbital').
 bodega('Lactulosa','Amoxicilina').
-bodega('Bupivacaína','Analgan').
-bodega('Bupivacaína','Paracetamol').
+bodega('Bupivacaina','Analgan').
+bodega('Bupivacaina','Paracetamol').
 
-bodega('Bupivacaína','Aspirina').
-bodega('Bupivacaína','Ibuprofeno').
-bodega('Bupivacaína','Naloxona').
-bodega('Bupivacaína','Lidocaína').
+bodega('Bupivacaina','Aspirina').
+bodega('Bupivacaina','Ibuprofeno').
+bodega('Bupivacaina','Naloxona').
+bodega('Bupivacaina','Lidocaina').
 
-bodega('Bupivacaína','Alopurinol').
-bodega('Bupivacaína','fenobarbital').
-bodega('Bupivacaína','Amoxicilina').
-bodega('Lidocaína','Analgan').
-bodega('Lidocaína','Paracetamol').
-bodega('Lidocaína','Lactulosa').
-bodega('Lidocaína','Aspirina').
+bodega('Bupivacaina','Alopurinol').
+bodega('Bupivacaina','fenobarbital').
+bodega('Bupivacaina','Amoxicilina').
+bodega('Lidocaina','Analgan').
+bodega('Lidocaina','Paracetamol').
+bodega('Lidocaina','Lactulosa').
+bodega('Lidocaina','Aspirina').
 
-bodega('Lidocaína','Naloxona').
-bodega('Lidocaína','Ibuprofeno').
+bodega('Lidocaina','Naloxona').
+bodega('Lidocaina','Ibuprofeno').
 
-bodega('Lidocaína','Alopurinol').
-bodega('Lidocaína','fenobarbital').
-bodega('Lidocaína','Amoxicilina').
+bodega('Lidocaina','Alopurinol').
+bodega('Lidocaina','fenobarbital').
+bodega('Lidocaina','Amoxicilina').
 bodega('Alopurinol','Analgan').
 
 bodega('Alopurinol','Lactulosa').
 bodega('Alopurinol','Aspirina').
-bodega('Alopurinol','Bupivacaína').
+bodega('Alopurinol','Bupivacaina').
 bodega('Alopurinol','Naloxona').
 
-bodega('Alopurinol','Ácido Valproico').
+bodega('Alopurinol','Acido Valproico').
 bodega('Alopurinol','Ibuprofeno').
 bodega('Alopurinol','fenobarbital').
 bodega('Alopurinol','Amoxicilina').
@@ -352,10 +352,10 @@ bodega('Analgan','Ibuprofeno').
 bodega('Analgan','Paracetamol').
 bodega('Analgan','Lactulosa').
 
-bodega('Analgan','Bupivacaína').
+bodega('Analgan','Bupivacaina').
 bodega('Analgan','Naloxona').
-bodega('Analgan','Lidocaína').
-bodega('Analgan','Ácido Valproico').
+bodega('Analgan','Lidocaina').
+bodega('Analgan','Acido Valproico').
 bodega('Analgan','Alopurinol').
 bodega('Analgan','fenobarbital').
 bodega('Analgan','Amoxicilina').
@@ -365,8 +365,8 @@ bodega('Aspirina','Lactulosa').
 bodega('Aspirina','Ibuprofeno').
 
 bodega('Aspirina','Naloxona').
-bodega('Aspirina','Lidocaína').
-bodega('Aspirina','Ácido Valproico').
+bodega('Aspirina','Lidocaina').
+bodega('Aspirina','Acido Valproico').
 
 bodega('Aspirina','fenobarbital').
 bodega('Aspirina','Amoxicilina').
@@ -374,31 +374,31 @@ bodega('Naloxona','Analgan').
 bodega('Naloxona','Paracetamol').
 
 bodega('Naloxona','Aspirina').
-bodega('Naloxona','Bupivacaína').
+bodega('Naloxona','Bupivacaina').
 bodega('Naloxona','Ibuprofeno').
-bodega('Naloxona','Lidocaína').
+bodega('Naloxona','Lidocaina').
 
 bodega('Naloxona','Alopurinol').
 bodega('Naloxona','fenobarbital').
 bodega('Naloxona','Amoxicilina').
-bodega('Ácido Valproico','Analgan').
+bodega('Acido Valproico','Analgan').
 
-bodega('Ácido Valproico','Lactulosa').
-bodega('Ácido Valproico','Aspirina').
-bodega('Ácido Valproico','Bupivacaína').
+bodega('Acido Valproico','Lactulosa').
+bodega('Acido Valproico','Aspirina').
+bodega('Acido Valproico','Bupivacaina').
 
-bodega('Ácido Valproico','Lidocaína').
-bodega('Ácido Valproico','Ibuprofeno').
+bodega('Acido Valproico','Lidocaina').
+bodega('Acido Valproico','Ibuprofeno').
 
-bodega('Ácido Valproico','fenobarbital').
-bodega('Ácido Valproico','Amoxicilina').
+bodega('Acido Valproico','fenobarbital').
+bodega('Acido Valproico','Amoxicilina').
 bodega('fenobarbital','Analgan').
 bodega('fenobarbital','Paracetamol').
 
 bodega('fenobarbital','Aspirina').
-bodega('fenobarbital','Bupivacaína').
+bodega('fenobarbital','Bupivacaina').
 bodega('fenobarbital','Naloxona').
-bodega('fenobarbital','Lidocaína').
+bodega('fenobarbital','Lidocaina').
 
 bodega('fenobarbital','Alopurinol').
 bodega('fenobarbital','Ibuprofeno').
@@ -407,10 +407,10 @@ bodega('Amoxicilina','Analgan').
 
 bodega('Amoxicilina','Lactulosa').
 bodega('Amoxicilina','Aspirina').
-bodega('Amoxicilina','Bupivacaína').
+bodega('Amoxicilina','Bupivacaina').
 bodega('Amoxicilina','Naloxona').
 
-bodega('Amoxicilina','Ácido Valproico').
+bodega('Amoxicilina','Acido Valproico').
 bodega('Amoxicilina','Alopurinol').
 bodega('Amoxicilina','fenobarbital').
 bodega('Amoxicilina','Ibuprofeno').
@@ -420,9 +420,9 @@ lote('Paracetamol','Ibuprofeno').
 lote('Paracetamol','Analgan').
 lote('Paracetamol','Lactulosa').
 
-lote('Paracetamol','Bupivacaína').
+lote('Paracetamol','Bupivacaina').
 lote('Paracetamol','Naloxona').
-lote('Paracetamol','Lidocaína').
+lote('Paracetamol','Lidocaina').
 
 lote('Paracetamol','Alopurinol').
 lote('Paracetamol','fenobarbital').
@@ -433,8 +433,8 @@ lote('Ibuprofeno','Lactulosa').
 lote('Ibuprofeno','Aspirina').
 
 lote('Ibuprofeno','Naloxona').
-lote('Ibuprofeno','Lidocaína').
-lote('Ibuprofeno','Ácido Valproico').
+lote('Ibuprofeno','Lidocaina').
+lote('Ibuprofeno','Acido Valproico').
 lote('Ibuprofeno','Alopurinol').
 lote('Ibuprofeno','fenobarbital').
 lote('Ibuprofeno','Amoxicilina').
@@ -442,43 +442,43 @@ lote('Lactulosa','Analgan').
 
 lote('Lactulosa','Ibuprofeno').
 lote('Lactulosa','Aspirina').
-lote('Lactulosa','Bupivacaína').
+lote('Lactulosa','Bupivacaina').
 
-lote('Lactulosa','Lidocaína').
-lote('Lactulosa','Ácido Valproico').
+lote('Lactulosa','Lidocaina').
+lote('Lactulosa','Acido Valproico').
 lote('Lactulosa','Alopurinol').
 lote('Lactulosa','fenobarbital').
 
-lote('Bupivacaína','Analgan').
-lote('Bupivacaína','Paracetamol').
-lote('Bupivacaína','Lactulosa').
+lote('Bupivacaina','Analgan').
+lote('Bupivacaina','Paracetamol').
+lote('Bupivacaina','Lactulosa').
 
-lote('Bupivacaína','Ibuprofeno').
-lote('Bupivacaína','Naloxona').
-lote('Bupivacaína','Lidocaína').
-lote('Bupivacaína','Ácido Valproico').
+lote('Bupivacaina','Ibuprofeno').
+lote('Bupivacaina','Naloxona').
+lote('Bupivacaina','Lidocaina').
+lote('Bupivacaina','Acido Valproico').
 
-lote('Bupivacaína','fenobarbital').
-lote('Bupivacaína','Amoxicilina').
-lote('Lidocaína','Analgan').
-lote('Lidocaína','Paracetamol').
+lote('Bupivacaina','fenobarbital').
+lote('Bupivacaina','Amoxicilina').
+lote('Lidocaina','Analgan').
+lote('Lidocaina','Paracetamol').
 
-lote('Lidocaína','Aspirina').
-lote('Lidocaína','Bupivacaína').
-lote('Lidocaína','Naloxona').
-lote('Lidocaína','Ibuprofeno').
-lote('Lidocaína','Ácido Valproico').
-lote('Lidocaína','Alopurinol').
+lote('Lidocaina','Aspirina').
+lote('Lidocaina','Bupivacaina').
+lote('Lidocaina','Naloxona').
+lote('Lidocaina','Ibuprofeno').
+lote('Lidocaina','Acido Valproico').
+lote('Lidocaina','Alopurinol').
 
-lote('Lidocaína','Amoxicilina').
+lote('Lidocaina','Amoxicilina').
 lote('Alopurinol','Analgan').
 lote('Alopurinol','Paracetamol').
 
 lote('Alopurinol','Aspirina').
-lote('Alopurinol','Bupivacaína').
+lote('Alopurinol','Bupivacaina').
 
-lote('Alopurinol','Lidocaína').
-lote('Alopurinol','Ácido Valproico').
+lote('Alopurinol','Lidocaina').
+lote('Alopurinol','Acido Valproico').
 lote('Alopurinol','Ibuprofeno').
 
 lote('Alopurinol','Amoxicilina').
@@ -486,9 +486,9 @@ lote('Analgan','Ibuprofeno').
 lote('Analgan','Paracetamol').
 
 lote('Analgan','Aspirina').
-lote('Analgan','Bupivacaína').
+lote('Analgan','Bupivacaina').
 lote('Analgan','Naloxona').
-lote('Analgan','Lidocaína').
+lote('Analgan','Lidocaina').
 
 lote('Analgan','Alopurinol').
 lote('Analgan','fenobarbital').
@@ -497,10 +497,10 @@ lote('Aspirina','Analgan').
 
 lote('Aspirina','Lactulosa').
 
-lote('Aspirina','Bupivacaína').
+lote('Aspirina','Bupivacaina').
 lote('Aspirina','Naloxona').
-lote('Aspirina','Lidocaína').
-lote('Aspirina','Ácido Valproico').
+lote('Aspirina','Lidocaina').
+lote('Aspirina','Acido Valproico').
 
 lote('Aspirina','fenobarbital').
 lote('Aspirina','Amoxicilina').
@@ -508,32 +508,32 @@ lote('Naloxona','Analgan').
 lote('Naloxona','Paracetamol').
 
 lote('Naloxona','Aspirina').
-lote('Naloxona','Bupivacaína').
+lote('Naloxona','Bupivacaina').
 lote('Naloxona','Ibuprofeno').
 
-lote('Naloxona','Ácido Valproico').
+lote('Naloxona','Acido Valproico').
 lote('Naloxona','Alopurinol').
 lote('Naloxona','fenobarbital').
 
-lote('Ácido Valproico','Analgan').
+lote('Acido Valproico','Analgan').
 
-lote('Ácido Valproico','Lactulosa').
-lote('Ácido Valproico','Aspirina').
+lote('Acido Valproico','Lactulosa').
+lote('Acido Valproico','Aspirina').
 
-lote('Ácido Valproico','Naloxona').
-lote('Ácido Valproico','Lidocaína').
+lote('Acido Valproico','Naloxona').
+lote('Acido Valproico','Lidocaina').
 
-lote('Ácido Valproico','Alopurinol').
-lote('Ácido Valproico','fenobarbital').
-lote('Ácido Valproico','Amoxicilina').
+lote('Acido Valproico','Alopurinol').
+lote('Acido Valproico','fenobarbital').
+lote('Acido Valproico','Amoxicilina').
 lote('fenobarbital','Analgan').
 
 lote('fenobarbital','Lactulosa').
 lote('fenobarbital','Aspirina').
-lote('fenobarbital','Bupivacaína').
+lote('fenobarbital','Bupivacaina').
 lote('fenobarbital','Naloxona').
-lote('fenobarbital','Lidocaína').
-lote('fenobarbital','Ácido Valproico').
+lote('fenobarbital','Lidocaina').
+lote('fenobarbital','Acido Valproico').
 lote('fenobarbital','Alopurinol').
 
 lote('fenobarbital','Amoxicilina').
@@ -541,10 +541,10 @@ lote('Amoxicilina','Analgan').
 lote('Amoxicilina','Paracetamol').
 lote('Amoxicilina','Lactulosa').
 lote('Amoxicilina','Aspirina').
-lote('Amoxicilina','Bupivacaína').
+lote('Amoxicilina','Bupivacaina').
 lote('Amoxicilina','Naloxona').
-lote('Amoxicilina','Lidocaína').
-lote('Amoxicilina','Ácido Valproico').
+lote('Amoxicilina','Lidocaina').
+lote('Amoxicilina','Acido Valproico').
 lote('Amoxicilina','Alopurinol').
 lote('Amoxicilina','fenobarbital').
 lote('Amoxicilina','Ibuprofeno').
